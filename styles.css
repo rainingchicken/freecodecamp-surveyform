@@ -1,0 +1,48 @@
+html {
+  background-color:black;
+  color:white;
+}
+body {
+  font-size:20px;
+  align-items:center;
+}
+h1,p {
+  text-align:center;
+  width:50vw;
+  margin: 1rem auto;
+}
+
+#userinfo {
+  border: 0;
+}
+
+#name-label, #email-label, #number-label {
+  display:block;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+
+input, select, textarea {
+  background-color: lightgrey;
+}
+
+#name, #email {
+  width:15em;
+}
+
+#submit {
+  margin:1em auto;
+  width:10rem;
+  height:2rem;
+  align-items:center;
+  display:block;
+}
+
+form {
+  width:50vw;
+  margin:auto;
+}
+
+fieldset {
+  margin-bottom: 2rem;
+}
