@@ -1,5 +1,7 @@
 # freecodecamp-surveyform
 
+https://rainingchicken.github.io/freecodecamp-surveyform/
+
 ### Description
 This is a website of survey forms to collect data of phone usage. Inputs include name, email, age of user, phone operating system, screen time, used apps, and favorite app. 
 
