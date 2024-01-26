@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="styles.css" rel="stylesheet"></link>
+    <title>Phone Usage Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Phone Usage Survey Form</h1>
+    <p id="description">This is a survey to collect information pertaining to user's phone operating system, screen time, app usage, and favorite app.</p>
+
+    <form id="survey-form">
+      <fieldset id="userinfo">
+        <label id="name-label" for="name" id="name-label">Name: <input required id="name" type="text" placeholder="First Name Last Name" /></label>
+        <label id="email-label" for="email" id="email-label">Email: <input required id="email" type="email" placeholder="1234@email.com" /></label>
+        <label id="number-label" for="number" id="number-label">Age: <input id="number" type="number" min="0" max ="150" placeholder="age" /></label>
+    </fieldset>
+      <fieldset id="phonetype">
+        <legend>What type of phone are you using?
+          <select id="dropdown">
+            <option>(select one)</option>
+            <option>iOS</option>
+            <option>Andriod</option>
+            <option>Other</option>
+          </select>
+      </legend>
+
+      </fieldset>
+      <fieldset id="screentime">
+        <legend>What's your current average daily screen time? 
+          <label for="1h"><input checked id="1h" type="radio" name="screentimehours" value="1h-value" />< 1 hour</label>
+          <label for="5h"><input id="5h" type="radio" name="screentimehours" value="5h-value" />1-5 hours</label>
+          <label for="10h"><input id="10h" type="radio" name="screentimehours" value="10h-value" />5-10 hours</label>
+          <label for="15h"><input id="15h" type="radio" name="screentimehours" value="15h-value" />10-15 hours</label>
+          <label for="20h"><input id="20h" type="radio" name="screentimehours" value="20h-value" />15-20 hours</label>
+          <label for="24hr"><input id="24hr" type="radio" name="screentimehours" value="24hr-value" />20-24 hours</label>
+        </legend>
+      </fieldset>
+
+      <fieldset id="phoneapp">
+        <legend>Which of these app do you use? (Select all that apply)
+          <label id="checkboxes" for="youtubecheckbox"><input id="youtubecheckbox" type="checkbox" value="youtube" />Youtube</label>
+          <label id="checkboxes" for="tiktokcheckbox"><input id="tiktokcheckbox" type="checkbox" value="tiktok" />TikTok</label>
+          <label id="checkboxes" for="spotifycheckbox"><input id="spotifycheckbox" type="checkbox" value="spotify" />Spotify</label>
+          <label id="checkboxes" for="instagramcheckbox"><input id="instagramcheckbox" type="checkbox" value="instagram" />Instagram</label>
+          <label id="checkboxes" for="snapchatcheckbox"><input id="snapchatcheckbox" type="checkbox" value="snapchat" />SnapChat</label>
+          <label id="checkboxes" for="xcheckbox"><input id="xcheckbox" type="checkbox" value="x" />X (formally Twitter)</label>
+          <label id="checkboxes" for="redditcheckbox"><input id="redditcheckbox" type="checkbox" value="reddit" />Reddit</label>
+          <label id="checkboxes" for="facebookcheckbox"><input id="facebookcheckbox" type="checkbox" value="facebook" />Facebook</label>
+        </legend>
+      </fieldset>
+
+      <fieldset id="favoriteapp">
+      <legend>Describe your favorite app?
+        <label for="favorite">
+          <textarea id="favorite" rows="3" cols="50" placeholder="My favorite app is..."></textarea>
+        </label>
+      </legend>
+      </fieldset>
+
+      <input id="submit" type="submit" />
+
+    </form>
+
+  </body>
+</html>
